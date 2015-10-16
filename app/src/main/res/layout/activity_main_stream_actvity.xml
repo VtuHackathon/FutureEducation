@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vtu.hackathon.srrs.futureeducation.activity.MainStreamActvity">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!--1st Row-->
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <!--engg-->
+                    <ImageView
+                        android:onClick="engg"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/engg"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+                    <!--medical-->
+                    <ImageView
+                        android:onClick="medical"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/medical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <!--2nd Row-->
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <!--masscom-->
+                    <ImageView
+                        android:onClick="masscom"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/masscom"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+                    <!--sports-->
+                    <ImageView
+                        android:onClick="sports"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/sports"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <!--3rd Row-->
+                <LinearLayout
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <!--llb-->
+                    <ImageView
+                        android:onClick="llb"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/llb"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+                    <!--defence-->
+                    <ImageView
+                        android:onClick="defence"
+                        android:background="@color/Blue"
+                        android:src="@mipmap/defence"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

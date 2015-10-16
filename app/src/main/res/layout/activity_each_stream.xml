@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vtu.hackathon.srrs.futureeducation.activity.EachStreamActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <RelativeLayout
+        android:id="@+id/viewLayout"
+        android:layout_above="@+id/options"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--generalInfo-->
+        <RelativeLayout
+            android:id="@+id/generalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--heading-->
+            <TextView
+                android:id="@+id/heading"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="General Information:"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--content-->
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="\t\t\t\tsathish sathish sathish sathish sathish sathish sathish sathish "
+                android:layout_below="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+        <!--FutureScope-->
+        <RelativeLayout
+            android:id="@+id/futureScope"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--heading-->
+            <TextView
+                android:id="@+id/heading"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="\nFuture Scope:"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--content-->
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="\t\t\t\tsathish sathish sathish sathish sathish sathish sathish sathish "
+                android:layout_below="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+        <!--Course Expenditure-->
+        <RelativeLayout
+            android:id="@+id/courseCost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--heading-->
+            <TextView
+                android:id="@+id/heading"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="\n\nCourse Expenditure:"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--content-->
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="\t\t\t\tsathish sathish sathish sathish sathish sathish sathish sathish "
+                android:layout_below="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <!--Trending News Feed-->
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:background="@color/cardview_background"
+            android:id="@+id/listView_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false"
+            android:clipToPadding="false"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector"
+            android:scrollingCache="false" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:onClick="options"
+            android:textColor="@color/White"
+            android:background="@drawable/button_filter_selector"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

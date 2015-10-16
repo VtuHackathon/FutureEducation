@@ -1,4 +1,4 @@
-package vtu.hackathon.srrs.futureeducatoin;
+package vtu.hackathon.srrs.futureeducation;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

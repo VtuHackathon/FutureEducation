@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--generalInfo-->
+        <Button
+            android:id="@+id/generalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_filter_selector"
+            android:gravity="center"
+            android:text="General Information" />
+        <!--technicalInfo-->
+        <Button
+            android:id="@+id/technicalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_filter_selector"
+            android:gravity="center"
+            android:text="Trending\n News Feed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--courseCost-->
+        <Button
+            android:id="@+id/courseCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_filter_selector"
+            android:gravity="center"
+            android:text="Course\nExpenditure" />
+        <!--futureScope-->
+        <Button
+            android:id="@+id/futureScope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_filter_selector"
+            android:gravity="center"
+            android:text="Future Scope" />
+    </LinearLayout>
+
+</LinearLayout>

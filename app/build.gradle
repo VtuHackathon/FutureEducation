@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "vtu.hackathon.srrs.futureeducatoin"
+        applicationId "vtu.hackathon.srrs.futureeducation"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
@@ -22,4 +22,18 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:21.0.+'
+
+    // recycler views
+    compile 'com.android.support:recyclerview-v7:22.0.+'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.7'
+    compile 'com.afollestad:material-dialogs:0.7.4.2'
+    compile files('libs/volley.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+
+    compile 'com.github.traex.rippleeffect:library:1.2.4'
+
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile 'it.neokree:MaterialTabs:0.11'
 }
